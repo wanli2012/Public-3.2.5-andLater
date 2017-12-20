@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GLNearby_ClassifyHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="330"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5b-NQ-nDu">
+                    <rect key="frame" x="0.0" y="0.0" width="371" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="aIZ-Nq-OOH"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CWX-Nd-F1T">
+                    <rect key="frame" x="0.0" y="150" width="371" height="170"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xcg-pH-ax8">
+                    <rect key="frame" x="0.0" y="0.0" width="371" height="64"/>
+                    <subviews>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXv-Km-Dnd">
+                            <rect key="frame" x="5" y="20" width="60" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="AXh-Da-Mya"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wr9-DJ-SAF">
+                            <rect key="frame" x="70" y="27.5" width="231" height="29"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="搜索白色" translatesAutoresizingMaskIntoConstraints="NO" id="Pra-cS-NZ9">
+                                    <rect key="frame" x="10" y="7.5" width="14" height="14"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="14" id="1cy-1c-dhG"/>
+                                        <constraint firstAttribute="width" secondItem="Pra-cS-NZ9" secondAttribute="height" multiplier="1:1" id="23x-Nb-Rqx"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oVU-4o-h8q">
+                                    <rect key="frame" x="34" y="0.0" width="197" height="29"/>
+                                    <gestureRecognizers/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="oVU-4o-h8q" firstAttribute="leading" secondItem="Pra-cS-NZ9" secondAttribute="trailing" constant="10" id="0Pi-nS-7a5"/>
+                                <constraint firstItem="Pra-cS-NZ9" firstAttribute="leading" secondItem="Wr9-DJ-SAF" secondAttribute="leading" constant="10" id="4tg-yM-fGF"/>
+                                <constraint firstItem="oVU-4o-h8q" firstAttribute="top" secondItem="Wr9-DJ-SAF" secondAttribute="top" id="63J-EH-cMG"/>
+                                <constraint firstItem="Pra-cS-NZ9" firstAttribute="centerY" secondItem="Wr9-DJ-SAF" secondAttribute="centerY" id="BhA-jB-640"/>
+                                <constraint firstAttribute="bottom" secondItem="oVU-4o-h8q" secondAttribute="bottom" id="FKm-Gc-hgS"/>
+                                <constraint firstAttribute="trailing" secondItem="oVU-4o-h8q" secondAttribute="trailing" id="JWV-fJ-piJ"/>
+                                <constraint firstAttribute="bottom" secondItem="oVU-4o-h8q" secondAttribute="bottom" id="P6p-qO-A3o"/>
+                                <constraint firstItem="oVU-4o-h8q" firstAttribute="top" secondItem="Wr9-DJ-SAF" secondAttribute="top" id="mJp-3r-6J1"/>
+                                <constraint firstAttribute="trailing" secondItem="oVU-4o-h8q" secondAttribute="trailing" id="pkq-WS-McH"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="eyz-i4-dtW" appends="YES" id="hVt-Ek-pHz"/>
+                            </connections>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdu-ce-oQm">
+                            <rect key="frame" x="321" y="29.5" width="40" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="4JL-FZ-DHF"/>
+                                <constraint firstAttribute="height" constant="25" id="UyH-SL-CL2"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="saomiao1">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickScan:" destination="iN0-l3-epB" eventType="touchUpInside" id="3Pg-yZ-CVB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="0WF-bq-EnQ"/>
+                        <constraint firstItem="Wr9-DJ-SAF" firstAttribute="height" secondItem="AXv-Km-Dnd" secondAttribute="height" constant="-15" id="8AJ-Gk-8o1"/>
+                        <constraint firstItem="Qdu-ce-oQm" firstAttribute="centerY" secondItem="Wr9-DJ-SAF" secondAttribute="centerY" id="EB8-Uc-hFq"/>
+                        <constraint firstItem="AXv-Km-Dnd" firstAttribute="leading" secondItem="Xcg-pH-ax8" secondAttribute="leading" constant="5" id="Fd3-Il-PPI"/>
+                        <constraint firstItem="Wr9-DJ-SAF" firstAttribute="centerY" secondItem="AXv-Km-Dnd" secondAttribute="centerY" id="OI1-DG-rKz"/>
+                        <constraint firstAttribute="trailing" secondItem="Qdu-ce-oQm" secondAttribute="trailing" constant="10" id="kE7-Wz-3oX"/>
+                        <constraint firstItem="Wr9-DJ-SAF" firstAttribute="centerX" secondItem="Xcg-pH-ax8" secondAttribute="centerX" id="mrD-v5-gmg"/>
+                        <constraint firstAttribute="bottom" secondItem="AXv-Km-Dnd" secondAttribute="bottom" id="pSC-or-tDu"/>
+                        <constraint firstItem="Wr9-DJ-SAF" firstAttribute="leading" secondItem="AXv-Km-Dnd" secondAttribute="trailing" constant="5" id="vhp-ag-5PF"/>
+                        <constraint firstItem="AXv-Km-Dnd" firstAttribute="top" secondItem="Xcg-pH-ax8" secondAttribute="top" constant="20" id="zBn-4i-A92"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Xcg-pH-ax8" secondAttribute="trailing" id="9XO-fR-QX1"/>
+                <constraint firstItem="CWX-Nd-F1T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NyS-RV-6av"/>
+                <constraint firstItem="Xcg-pH-ax8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Prh-FK-cNP"/>
+                <constraint firstAttribute="trailing" secondItem="Y5b-NQ-nDu" secondAttribute="trailing" id="dYI-9O-54N"/>
+                <constraint firstItem="Y5b-NQ-nDu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="na5-6O-aZt"/>
+                <constraint firstItem="Xcg-pH-ax8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nae-iL-KQe"/>
+                <constraint firstAttribute="bottom" secondItem="CWX-Nd-F1T" secondAttribute="bottom" constant="10" id="oz1-5m-LKB"/>
+                <constraint firstAttribute="trailing" secondItem="CWX-Nd-F1T" secondAttribute="trailing" id="qNd-YO-5gD"/>
+                <constraint firstItem="CWX-Nd-F1T" firstAttribute="top" secondItem="Y5b-NQ-nDu" secondAttribute="bottom" id="xRK-L3-G9f"/>
+                <constraint firstItem="Y5b-NQ-nDu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ybQ-59-hUT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="adressLb" destination="AXv-Km-Dnd" id="gA1-kE-WsC"/>
+                <outlet property="bannerView" destination="Y5b-NQ-nDu" id="nj2-kS-Scx"/>
+                <outlet property="classifyView" destination="CWX-Nd-F1T" id="Ztq-Ov-nzq"/>
+                <outlet property="heightB" destination="aIZ-Nq-OOH" id="DfK-Lw-sPa"/>
+                <outlet property="inputView" destination="Wr9-DJ-SAF" id="FGy-Rh-KxD"/>
+                <outlet property="searchView" destination="Xcg-pH-ax8" id="Iua-mZ-dAg"/>
+            </connections>
+            <point key="canvasLocation" x="-23.5" y="-73"/>
+        </view>
+        <tapGestureRecognizer id="eyz-i4-dtW">
+            <connections>
+                <action selector="clickSearch:" destination="iN0-l3-epB" id="9LD-2L-pGD"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="saomiao1" width="80" height="80"/>
+        <image name="搜索白色" width="16" height="16"/>
+    </resources>
+</document>

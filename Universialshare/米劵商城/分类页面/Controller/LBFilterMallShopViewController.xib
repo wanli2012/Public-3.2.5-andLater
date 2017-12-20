@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LBFilterMallShopViewController">
+            <connections>
+                <outlet property="collectionview" destination="hjn-WI-6Mj" id="gw6-6a-ghv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzh-24-ISc">
+                    <rect key="frame" x="0.0" y="617" width="188" height="50"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Wuf-hS-zO8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="退出">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backEvent:" destination="-1" eventType="touchUpInside" id="PxV-1V-BrC"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="hjn-WI-6Mj">
+                    <rect key="frame" x="0.0" y="40" width="375" height="577"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CKN-GB-Njd">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hAY-lG-F1b"/>
+                        <outlet property="delegate" destination="-1" id="5Pd-Ci-A4z"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zn9-eN-kHJ">
+                    <rect key="frame" x="189" y="617" width="186" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.52298766370000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="C7H-3E-oij"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="重置">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="reSetupEvent:" destination="-1" eventType="touchUpInside" id="xSI-SP-C25"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xzh-24-ISc" secondAttribute="bottom" id="59h-hA-8vj"/>
+                <constraint firstItem="hjn-WI-6Mj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BX8-i9-XbR"/>
+                <constraint firstItem="hjn-WI-6Mj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="RXM-pS-Dgn"/>
+                <constraint firstItem="xzh-24-ISc" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1/2" id="XXF-im-NY0"/>
+                <constraint firstAttribute="trailing" secondItem="hjn-WI-6Mj" secondAttribute="trailing" id="ZlP-Na-r2i"/>
+                <constraint firstAttribute="bottom" secondItem="Zn9-eN-kHJ" secondAttribute="bottom" id="cvg-gB-GoK"/>
+                <constraint firstItem="Zn9-eN-kHJ" firstAttribute="leading" secondItem="xzh-24-ISc" secondAttribute="trailing" constant="1" id="pIM-mC-zmz"/>
+                <constraint firstItem="xzh-24-ISc" firstAttribute="top" secondItem="hjn-WI-6Mj" secondAttribute="bottom" id="wZV-gz-vXi"/>
+                <constraint firstItem="xzh-24-ISc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="we7-jL-I7F"/>
+                <constraint firstAttribute="trailing" secondItem="Zn9-eN-kHJ" secondAttribute="trailing" id="zZK-6z-OZc"/>
+            </constraints>
+            <point key="canvasLocation" x="35.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

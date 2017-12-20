@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LBMineStoreOrderingViewController">
+            <connections>
+                <outlet property="allButton" destination="q3d-bf-rMZ" id="vi6-i5-BU5"/>
+                <outlet property="buttonView" destination="JYA-oV-maX" id="wSj-Ae-AT2"/>
+                <outlet property="todatbutton" destination="L5k-Qv-JhV" id="xDo-2K-XxN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYA-oV-maX">
+                    <rect key="frame" x="0.0" y="65" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3d-bf-rMZ">
+                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="49"/>
+                            <state key="normal" title="线下订单">
+                                <color key="titleColor" red="0.92156862750000001" green="0.53333333329999999" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="allbuttonEvent:" destination="-1" eventType="touchUpInside" id="OFh-eI-sTK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5k-Qv-JhV">
+                            <rect key="frame" x="187.5" y="0.0" width="187.5" height="49"/>
+                            <state key="normal" title="米分订单">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="todaybutton:" destination="-1" eventType="touchUpInside" id="N2f-uG-PDC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="q3d-bf-rMZ" firstAttribute="leading" secondItem="JYA-oV-maX" secondAttribute="leading" id="5KP-TQ-u93"/>
+                        <constraint firstAttribute="bottom" secondItem="L5k-Qv-JhV" secondAttribute="bottom" constant="1" id="LcE-at-6od"/>
+                        <constraint firstItem="L5k-Qv-JhV" firstAttribute="top" secondItem="JYA-oV-maX" secondAttribute="top" id="PRB-bk-XYf"/>
+                        <constraint firstItem="L5k-Qv-JhV" firstAttribute="leading" secondItem="q3d-bf-rMZ" secondAttribute="trailing" id="Vkl-Cq-yhu"/>
+                        <constraint firstItem="q3d-bf-rMZ" firstAttribute="top" secondItem="JYA-oV-maX" secondAttribute="top" id="Wgd-fh-tH0"/>
+                        <constraint firstAttribute="height" constant="50" id="aMb-ry-2ku"/>
+                        <constraint firstAttribute="bottom" secondItem="q3d-bf-rMZ" secondAttribute="bottom" constant="1" id="oCe-4q-t7d"/>
+                        <constraint firstItem="L5k-Qv-JhV" firstAttribute="width" secondItem="q3d-bf-rMZ" secondAttribute="width" id="qI3-UP-3de"/>
+                        <constraint firstItem="q3d-bf-rMZ" firstAttribute="width" secondItem="JYA-oV-maX" secondAttribute="width" multiplier="1/2" id="wbb-oV-I1t"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLE-MS-7YB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的订单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDV-6d-nY3">
+                            <rect key="frame" x="155" y="34" width="66" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="2fe-nl-Sfp"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="KGF-XY-iBl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.60784313729999995" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="gDV-6d-nY3" firstAttribute="centerX" secondItem="GLE-MS-7YB" secondAttribute="centerX" id="Bmn-wS-blO"/>
+                        <constraint firstAttribute="bottom" secondItem="gDV-6d-nY3" secondAttribute="bottom" constant="10" id="F21-fO-FLa"/>
+                        <constraint firstAttribute="height" constant="64" id="sVR-6t-KG3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JYA-oV-maX" secondAttribute="trailing" id="BV9-6v-ESu"/>
+                <constraint firstItem="GLE-MS-7YB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QL5-va-uwi"/>
+                <constraint firstItem="JYA-oV-maX" firstAttribute="top" secondItem="GLE-MS-7YB" secondAttribute="bottom" constant="1" id="jZa-U4-i0r"/>
+                <constraint firstAttribute="trailing" secondItem="GLE-MS-7YB" secondAttribute="trailing" id="mIV-fg-At3"/>
+                <constraint firstItem="GLE-MS-7YB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sjz-Nx-G0u"/>
+                <constraint firstItem="JYA-oV-maX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yUl-pP-Q3z"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

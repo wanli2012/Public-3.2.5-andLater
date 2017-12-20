@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LBNearbySearchView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Js6-iu-iee">
+                    <rect key="frame" x="10" y="10" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="q5I-sV-iYY"/>
+                        <constraint firstAttribute="height" constant="70" id="wLf-8k-T3s"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商家" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cy-ip-u4X">
+                    <rect key="frame" x="90" y="10" width="275" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="zmm-rA-Hus"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApJ-yO-eLS">
+                    <rect key="frame" x="90" y="40" width="275" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="GeG-vn-0go"/>
+                        <constraint firstAttribute="height" constant="20" id="eGM-pE-wmY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nw7-Ma-Dvr" customClass="LCStarRatingView">
+                    <rect key="frame" x="90" y="70" width="80" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="R3o-2O-sor"/>
+                        <constraint firstAttribute="height" constant="20" id="Tg8-Dz-RB4"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="starColor">
+                            <color key="value" red="0.91720074419999997" green="0.55509167910000001" blue="0.1200942919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="starPlaceHolderColor">
+                            <color key="value" red="0.78052580360000001" green="0.77263885740000005" blue="0.76827877759999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXg-2u-Zsw">
+                    <rect key="frame" x="365" y="70" width="0.0" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="4io-oh-oEr"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" id="A2t-XP-kHp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxF-B1-AJF">
+                    <rect key="frame" x="0.0" y="119" width="375" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="U4M-2l-LCH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mxF-B1-AJF" secondAttribute="bottom" id="5kk-ts-Uod"/>
+                <constraint firstItem="Nw7-Ma-Dvr" firstAttribute="leading" secondItem="Js6-iu-iee" secondAttribute="trailing" constant="10" id="9pC-Fs-dx5"/>
+                <constraint firstAttribute="trailing" secondItem="5cy-ip-u4X" secondAttribute="trailing" constant="10" id="J1D-Bj-wTW"/>
+                <constraint firstAttribute="trailing" secondItem="bXg-2u-Zsw" secondAttribute="trailing" constant="10" id="LQC-WT-P9N"/>
+                <constraint firstItem="bXg-2u-Zsw" firstAttribute="top" secondItem="ApJ-yO-eLS" secondAttribute="bottom" constant="10" id="Nw5-1q-gMH"/>
+                <constraint firstItem="Js6-iu-iee" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="PD5-sO-FVE"/>
+                <constraint firstItem="5cy-ip-u4X" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="UQW-Yq-y75"/>
+                <constraint firstAttribute="trailing" secondItem="ApJ-yO-eLS" secondAttribute="trailing" constant="10" id="WhK-l9-uVB"/>
+                <constraint firstItem="Nw7-Ma-Dvr" firstAttribute="top" secondItem="ApJ-yO-eLS" secondAttribute="bottom" constant="10" id="Xeb-ap-roQ"/>
+                <constraint firstItem="mxF-B1-AJF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="grm-7d-yel"/>
+                <constraint firstItem="5cy-ip-u4X" firstAttribute="leading" secondItem="Js6-iu-iee" secondAttribute="trailing" constant="10" id="hf1-Ev-q2V"/>
+                <constraint firstItem="ApJ-yO-eLS" firstAttribute="top" secondItem="5cy-ip-u4X" secondAttribute="bottom" constant="10" id="lUq-gz-Ja6"/>
+                <constraint firstItem="Js6-iu-iee" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="pb6-L5-bEA"/>
+                <constraint firstItem="ApJ-yO-eLS" firstAttribute="leading" secondItem="Js6-iu-iee" secondAttribute="trailing" constant="10" id="qxt-Va-DNO"/>
+                <constraint firstAttribute="trailing" secondItem="mxF-B1-AJF" secondAttribute="trailing" id="wON-pm-4ef"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="adresslb" destination="ApJ-yO-eLS" id="DGg-ZG-078"/>
+                <outlet property="imagev" destination="Js6-iu-iee" id="1RE-zF-KIu"/>
+                <outlet property="limitlb" destination="bXg-2u-Zsw" id="Ozn-38-M3K"/>
+                <outlet property="namelb" destination="5cy-ip-u4X" id="VMe-gA-hH4"/>
+                <outlet property="starView" destination="Nw7-Ma-Dvr" id="hg0-bt-azw"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="54"/>
+        </view>
+    </objects>
+</document>

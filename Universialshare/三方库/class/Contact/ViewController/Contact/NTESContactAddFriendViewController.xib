@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NTESContactAddFriendViewController">
+            <connections>
+                <outlet property="tableview" destination="8rh-da-svy" id="UcA-Ez-7ZB"/>
+                <outlet property="texttf" destination="FUN-UN-xpf" id="jqr-9E-6Ya"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rc-OI-xJR">
+                    <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入搜索关键字" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FUN-UN-xpf">
+                            <rect key="frame" x="10" y="0.0" width="265" height="50"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="pTH-co-uHY"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbt-hW-MiV">
+                            <rect key="frame" x="285" y="8" width="80" height="35"/>
+                            <color key="backgroundColor" red="0.91720074419999997" green="0.55509167910000001" blue="0.1200942919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="Cxq-Y3-IhP"/>
+                                <constraint firstAttribute="height" constant="35" id="XTL-a4-O6F"/>
+                            </constraints>
+                            <state key="normal" title="搜索">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="serachfriends:" destination="-1" eventType="touchUpInside" id="L8V-51-n9P"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="FUN-UN-xpf" firstAttribute="leading" secondItem="4rc-OI-xJR" secondAttribute="leading" constant="10" id="D7l-zq-5Md"/>
+                        <constraint firstAttribute="trailing" secondItem="Dbt-hW-MiV" secondAttribute="trailing" constant="10" id="FQo-ja-8sL"/>
+                        <constraint firstItem="Dbt-hW-MiV" firstAttribute="centerY" secondItem="4rc-OI-xJR" secondAttribute="centerY" id="O8e-3L-dad"/>
+                        <constraint firstAttribute="bottom" secondItem="FUN-UN-xpf" secondAttribute="bottom" id="XvF-kq-jtM"/>
+                        <constraint firstItem="FUN-UN-xpf" firstAttribute="top" secondItem="4rc-OI-xJR" secondAttribute="top" id="Z0g-NA-t7K"/>
+                        <constraint firstItem="Dbt-hW-MiV" firstAttribute="leading" secondItem="FUN-UN-xpf" secondAttribute="trailing" constant="10" id="hdY-go-5Tk"/>
+                        <constraint firstAttribute="height" constant="50" id="jvX-Me-QUd"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*请输入搜索的手机号码或帐号ID或帐号名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yh8-9w-mym">
+                    <rect key="frame" x="10" y="124" width="355" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="x1h-IW-imd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.9981657862663269" green="0.082276827775151246" blue="0.26334703985042796" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8rh-da-svy">
+                    <rect key="frame" x="0.0" y="144" width="375" height="523"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Jhw-NF-LJS"/>
+                        <outlet property="delegate" destination="-1" id="Mp2-wq-qme"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yh8-9w-mym" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="1VW-il-baw"/>
+                <constraint firstItem="8rh-da-svy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8yc-Pi-BUS"/>
+                <constraint firstItem="yh8-9w-mym" firstAttribute="top" secondItem="4rc-OI-xJR" secondAttribute="bottom" constant="10" id="ClQ-gy-V1c"/>
+                <constraint firstItem="4rc-OI-xJR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NFO-n8-kNM"/>
+                <constraint firstAttribute="bottom" secondItem="8rh-da-svy" secondAttribute="bottom" id="akf-CP-FmQ"/>
+                <constraint firstItem="8rh-da-svy" firstAttribute="top" secondItem="yh8-9w-mym" secondAttribute="bottom" constant="10" id="fYq-xr-aHp"/>
+                <constraint firstAttribute="trailing" secondItem="yh8-9w-mym" secondAttribute="trailing" constant="10" id="idZ-hd-85b"/>
+                <constraint firstAttribute="trailing" secondItem="8rh-da-svy" secondAttribute="trailing" id="kXW-DG-VVa"/>
+                <constraint firstItem="4rc-OI-xJR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="vGm-vM-U8M"/>
+                <constraint firstAttribute="trailing" secondItem="4rc-OI-xJR" secondAttribute="trailing" id="y4S-S1-DAu"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

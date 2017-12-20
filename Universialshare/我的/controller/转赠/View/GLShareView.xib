@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="GLShareView" customClass="GLShareView">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="157"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择分享类型" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSv-Ew-3Pg">
+                    <rect key="frame" x="0.0" y="127" width="423" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="w7L-Jx-wwy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prk-yO-mrh">
+                    <rect key="frame" x="141" y="0.0" width="141" height="127"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="微信" image="share_wechat">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="share:" destination="iN0-l3-epB" eventType="touchUpInside" id="e9h-kv-yFo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7h-FR-P1x">
+                    <rect key="frame" x="282" y="0.0" width="141" height="127"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="朋友圈" image="share_wecahrcircle">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="share:" destination="iN0-l3-epB" eventType="touchUpInside" id="rAy-nn-qPj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOx-Lu-NaJ">
+                    <rect key="frame" x="0.0" y="0.0" width="141" height="127"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="微博" image="share_sina">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="share:" destination="iN0-l3-epB" eventType="touchUpInside" id="JXf-YW-kyh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BOx-Lu-NaJ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1/3" id="0dz-tw-1Rs"/>
+                <constraint firstItem="aSv-Ew-3Pg" firstAttribute="top" secondItem="N7h-FR-P1x" secondAttribute="bottom" id="1GN-lz-yix"/>
+                <constraint firstItem="aSv-Ew-3Pg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1Ud-hu-THq"/>
+                <constraint firstItem="prk-yO-mrh" firstAttribute="width" secondItem="BOx-Lu-NaJ" secondAttribute="width" id="2NT-Ge-D7l"/>
+                <constraint firstAttribute="trailing" secondItem="N7h-FR-P1x" secondAttribute="trailing" id="2cC-zX-Z1F"/>
+                <constraint firstItem="N7h-FR-P1x" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CAi-RV-gGF"/>
+                <constraint firstItem="aSv-Ew-3Pg" firstAttribute="top" secondItem="BOx-Lu-NaJ" secondAttribute="bottom" id="Im7-ZS-TxL"/>
+                <constraint firstItem="prk-yO-mrh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MKu-Sx-yB9"/>
+                <constraint firstItem="BOx-Lu-NaJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PvE-w7-8OK"/>
+                <constraint firstItem="prk-yO-mrh" firstAttribute="leading" secondItem="BOx-Lu-NaJ" secondAttribute="trailing" id="RgA-ad-bDm"/>
+                <constraint firstItem="N7h-FR-P1x" firstAttribute="leading" secondItem="prk-yO-mrh" secondAttribute="trailing" id="Wzq-i7-X4K"/>
+                <constraint firstItem="aSv-Ew-3Pg" firstAttribute="top" secondItem="prk-yO-mrh" secondAttribute="bottom" id="dRK-Ji-p7q"/>
+                <constraint firstItem="BOx-Lu-NaJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hch-rB-85S"/>
+                <constraint firstAttribute="trailing" secondItem="aSv-Ew-3Pg" secondAttribute="trailing" id="jMh-y1-Oa6"/>
+                <constraint firstAttribute="bottom" secondItem="aSv-Ew-3Pg" secondAttribute="bottom" constant="10" id="niM-A4-voM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="friendShareBtn" destination="N7h-FR-P1x" id="b0z-X8-zZ4"/>
+                <outlet property="weiboShareBtn" destination="BOx-Lu-NaJ" id="xec-BS-ajc"/>
+                <outlet property="weixinShareBtn" destination="prk-yO-mrh" id="RWl-Kj-TLS"/>
+            </connections>
+            <point key="canvasLocation" x="18" y="-60"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="share_sina" width="39" height="39"/>
+        <image name="share_wecahrcircle" width="39" height="39"/>
+        <image name="share_wechat" width="39" height="39"/>
+    </resources>
+</document>

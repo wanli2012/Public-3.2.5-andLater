@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="KGk-i7-Jjw" customClass="GLBankCardCellTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_icbc" translatesAutoresizingMaskIntoConstraints="NO" id="rwN-ZE-gDD">
+                        <rect key="frame" x="10" y="10" width="35" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rwN-ZE-gDD" secondAttribute="height" multiplier="52:47" id="1fy-7i-eKh"/>
+                            <constraint firstAttribute="width" constant="35" id="9mA-GI-Wb6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="**** **** **** 0907" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLz-Pc-pqF">
+                        <rect key="frame" x="65" y="38" width="128" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="WcV-U0-HWe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国银行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiE-OP-4NU">
+                        <rect key="frame" x="65" y="10" width="58" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="58" id="6sS-1W-xpy"/>
+                            <constraint firstAttribute="height" constant="18" id="Lvl-Mn-oG4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aES-i5-9lg">
+                        <rect key="frame" x="0.0" y="63.5" width="340" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Gp5-4S-gA5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RLz-Pc-pqF" firstAttribute="height" secondItem="HiE-OP-4NU" secondAttribute="height" id="0dV-An-TiS"/>
+                    <constraint firstItem="HiE-OP-4NU" firstAttribute="leading" secondItem="rwN-ZE-gDD" secondAttribute="trailing" constant="20" id="8Fg-LG-CE6"/>
+                    <constraint firstAttribute="trailing" secondItem="aES-i5-9lg" secondAttribute="trailing" id="BQ1-1U-Y7d"/>
+                    <constraint firstItem="HiE-OP-4NU" firstAttribute="top" secondItem="rwN-ZE-gDD" secondAttribute="top" id="Fwh-xS-ydD"/>
+                    <constraint firstItem="RLz-Pc-pqF" firstAttribute="top" secondItem="HiE-OP-4NU" secondAttribute="bottom" constant="10" id="GPC-2J-mn9"/>
+                    <constraint firstItem="RLz-Pc-pqF" firstAttribute="leading" secondItem="rwN-ZE-gDD" secondAttribute="trailing" constant="20" id="aoe-MD-jav"/>
+                    <constraint firstItem="rwN-ZE-gDD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="krF-pS-Bjm"/>
+                    <constraint firstAttribute="bottom" secondItem="aES-i5-9lg" secondAttribute="bottom" id="rtu-ud-idL"/>
+                    <constraint firstItem="aES-i5-9lg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rxg-BA-84J"/>
+                    <constraint firstItem="rwN-ZE-gDD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="zPZ-l2-DTn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bankNumLabel" destination="RLz-Pc-pqF" id="hny-Kr-erZ"/>
+                <outlet property="banknameLabel" destination="HiE-OP-4NU" id="fXT-Im-nGm"/>
+                <outlet property="iconImageV" destination="rwN-ZE-gDD" id="tP3-kZ-G74"/>
+            </connections>
+            <point key="canvasLocation" x="41" y="-101"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mine_icbc" width="75" height="75"/>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GLHourseDetailController">
+            <connections>
+                <outlet property="settleBtn" destination="Ug0-GF-x9i" id="eGk-JU-tO3"/>
+                <outlet property="tableView" destination="Io3-27-tPH" id="BqF-ks-Lpv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="383"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Io3-27-tPH">
+                    <rect key="frame" x="0.0" y="64" width="353" height="269"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="a0R-Ch-XIV"/>
+                        <outlet property="delegate" destination="-1" id="3ky-Jp-gLj"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ays-uN-xzR">
+                    <rect key="frame" x="0.0" y="333" width="353" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug0-GF-x9i">
+                            <rect key="frame" x="177" y="0.0" width="176" height="50"/>
+                            <color key="backgroundColor" red="1" green="0.60784313729999995" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="立即购买">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="confirmOrder:" destination="-1" eventType="touchUpInside" id="bcC-47-eIL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALz-Xg-UOY">
+                            <rect key="frame" x="20" y="10" width="30" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="HUa-Rb-bI6"/>
+                                <constraint firstAttribute="width" constant="30" id="hZU-So-kbY"/>
+                            </constraints>
+                            <state key="normal" image="service"/>
+                            <connections>
+                                <action selector="ContactCustomerService:" destination="-1" eventType="touchUpInside" id="5MJ-hG-P0r"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96033936740000003" green="0.97251003979999995" blue="0.98073250059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Ug0-GF-x9i" secondAttribute="trailing" id="56L-0p-pJ7"/>
+                        <constraint firstItem="Ug0-GF-x9i" firstAttribute="width" secondItem="Ays-uN-xzR" secondAttribute="width" multiplier="1/2" id="7dk-u0-yYH"/>
+                        <constraint firstAttribute="bottom" secondItem="Ug0-GF-x9i" secondAttribute="bottom" id="GOW-at-7jJ"/>
+                        <constraint firstAttribute="height" constant="50" id="HYm-gk-SUW"/>
+                        <constraint firstItem="ALz-Xg-UOY" firstAttribute="centerY" secondItem="Ays-uN-xzR" secondAttribute="centerY" id="Jhc-C5-FkP"/>
+                        <constraint firstItem="Ug0-GF-x9i" firstAttribute="top" secondItem="Ays-uN-xzR" secondAttribute="top" id="eca-fU-wQY"/>
+                        <constraint firstItem="ALz-Xg-UOY" firstAttribute="leading" secondItem="Ays-uN-xzR" secondAttribute="leading" constant="20" id="vdR-Bj-sgC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ays-uN-xzR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BG2-DD-ybD"/>
+                <constraint firstAttribute="bottom" secondItem="Ays-uN-xzR" secondAttribute="bottom" id="HaL-Ry-Blq"/>
+                <constraint firstItem="Io3-27-tPH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="M6a-rl-hYs"/>
+                <constraint firstAttribute="trailing" secondItem="Ays-uN-xzR" secondAttribute="trailing" id="Tdj-qy-5tb"/>
+                <constraint firstItem="Io3-27-tPH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fF9-GR-Iah"/>
+                <constraint firstAttribute="trailing" secondItem="Io3-27-tPH" secondAttribute="trailing" id="lap-db-dpq"/>
+                <constraint firstItem="Ays-uN-xzR" firstAttribute="top" secondItem="Io3-27-tPH" secondAttribute="bottom" id="s0O-LG-Kdf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="32.5" y="-127.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="service" width="19" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LBGoodFriendsSectionView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gq-RM-IxC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7My-s0-iLW">
+                            <rect key="frame" x="186.5" y="18.5" width="2" height="20"/>
+                            <color key="backgroundColor" red="0.92146831750000002" green="0.92162626979999995" blue="0.92145836349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="2" id="0ta-mr-SRC"/>
+                                <constraint firstAttribute="height" constant="20" id="eFa-aA-S7p"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUU-go-O2k">
+                            <rect key="frame" x="0.0" y="0.0" width="186.5" height="57"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="消息">
+                                <color key="titleColor" red="0.56856346130371094" green="0.56866437196731567" blue="0.56855708360671997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.92156862750000001" green="0.53333333329999999" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agq-mD-RhA">
+                            <rect key="frame" x="188.5" y="0.0" width="186.5" height="57"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="通讯录">
+                                <color key="titleColor" red="0.56856346130000002" green="0.56866437199999997" blue="0.56855708360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.92156862750000001" green="0.53333333329999999" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="pUU-go-O2k" secondAttribute="bottom" id="79s-uT-tLx"/>
+                        <constraint firstItem="7My-s0-iLW" firstAttribute="centerX" secondItem="5gq-RM-IxC" secondAttribute="centerX" id="7BC-Gt-7lT"/>
+                        <constraint firstAttribute="bottom" secondItem="Agq-mD-RhA" secondAttribute="bottom" id="7ws-ni-3V8"/>
+                        <constraint firstItem="Agq-mD-RhA" firstAttribute="top" secondItem="5gq-RM-IxC" secondAttribute="top" id="E0k-vF-IiB"/>
+                        <constraint firstAttribute="trailing" secondItem="Agq-mD-RhA" secondAttribute="trailing" id="JJi-8v-JGD"/>
+                        <constraint firstItem="7My-s0-iLW" firstAttribute="centerY" secondItem="5gq-RM-IxC" secondAttribute="centerY" id="Q4w-5G-JYh"/>
+                        <constraint firstItem="pUU-go-O2k" firstAttribute="top" secondItem="5gq-RM-IxC" secondAttribute="top" id="SXg-En-W4k"/>
+                        <constraint firstItem="7My-s0-iLW" firstAttribute="leading" secondItem="pUU-go-O2k" secondAttribute="trailing" id="d3d-9S-bA2"/>
+                        <constraint firstItem="Agq-mD-RhA" firstAttribute="leading" secondItem="7My-s0-iLW" secondAttribute="trailing" id="j0j-RI-ezL"/>
+                        <constraint firstItem="pUU-go-O2k" firstAttribute="leading" secondItem="5gq-RM-IxC" secondAttribute="leading" id="p4T-I6-skq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.92146831750000002" green="0.92162626979999995" blue="0.92145836349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5gq-RM-IxC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KrO-I2-n9I"/>
+                <constraint firstAttribute="bottom" secondItem="5gq-RM-IxC" secondAttribute="bottom" constant="3" id="Q26-0b-PPo"/>
+                <constraint firstItem="5gq-RM-IxC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Qdb-sh-kok"/>
+                <constraint firstAttribute="trailing" secondItem="5gq-RM-IxC" secondAttribute="trailing" id="sqx-IE-wE1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="MailListBt" destination="Agq-mD-RhA" id="0Sb-VA-ycB"/>
+                <outlet property="messageBt" destination="pUU-go-O2k" id="6Wz-CO-0GD"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="54"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LBGoodFriendsHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKA-tF-fg7">
+                    <rect key="frame" x="20" y="5" width="335" height="40"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="搜索" translatesAutoresizingMaskIntoConstraints="NO" id="GbJ-AM-pkJ">
+                            <rect key="frame" x="15" y="12.5" width="15" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="Blc-Hj-srO"/>
+                                <constraint firstAttribute="width" constant="15" id="IsE-jg-tLS"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搜索好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vai-PQ-yNp">
+                            <rect key="frame" x="40" y="10" width="285" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="qMi-bY-WRr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.56856346130000002" green="0.56866437199999997" blue="0.56855708360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="GbJ-AM-pkJ" firstAttribute="leading" secondItem="DKA-tF-fg7" secondAttribute="leading" constant="15" id="LeE-6V-6Xf"/>
+                        <constraint firstItem="Vai-PQ-yNp" firstAttribute="centerY" secondItem="GbJ-AM-pkJ" secondAttribute="centerY" id="Pa7-ol-aiU"/>
+                        <constraint firstItem="Vai-PQ-yNp" firstAttribute="leading" secondItem="GbJ-AM-pkJ" secondAttribute="trailing" constant="10" id="UMf-op-fFQ"/>
+                        <constraint firstItem="GbJ-AM-pkJ" firstAttribute="centerY" secondItem="DKA-tF-fg7" secondAttribute="centerY" id="vOs-av-Qe2"/>
+                        <constraint firstAttribute="trailing" secondItem="Vai-PQ-yNp" secondAttribute="trailing" constant="10" id="xTT-y4-2aH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.92146831750869751" green="0.92162626981735229" blue="0.92145836353302002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DKA-tF-fg7" secondAttribute="trailing" constant="20" id="15c-do-xgy"/>
+                <constraint firstItem="DKA-tF-fg7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Bq5-R4-STH"/>
+                <constraint firstItem="DKA-tF-fg7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="lhq-Dd-Xc0"/>
+                <constraint firstAttribute="bottom" secondItem="DKA-tF-fg7" secondAttribute="bottom" constant="5" id="qXD-Ra-rMk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="searchView" destination="DKA-tF-fg7" id="NRO-oM-mhn"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="搜索" width="15" height="14"/>
+    </resources>
+</document>

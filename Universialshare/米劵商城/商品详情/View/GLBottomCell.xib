@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="263" id="KGk-i7-Jjw" customClass="GLBottomCell">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="263"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="263"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更多推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bR1-ju-gi1">
+                        <rect key="frame" x="10" y="10" width="57.5" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="57.5" id="5Bg-ar-YRu"/>
+                            <constraint firstAttribute="height" constant="17" id="7po-Vq-lCA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XRPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="XlR-Y8-9t6">
+                        <rect key="frame" x="10" y="37" width="296" height="121"/>
+                    </imageView>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R32-fQ-bb9">
+                        <rect key="frame" x="0.0" y="258" width="316" height="5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="CRk-ba-0cO"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XRPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="2Dy-b9-bCn">
+                        <rect key="frame" x="10" y="158" width="296" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Ptl-73-KZi"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XlR-Y8-9t6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="0fE-vx-rC6"/>
+                    <constraint firstItem="bR1-ju-gi1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="3hx-VM-euu"/>
+                    <constraint firstItem="bR1-ju-gi1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="EUo-mv-x3B"/>
+                    <constraint firstAttribute="bottom" secondItem="R32-fQ-bb9" secondAttribute="bottom" id="WO9-VV-1MQ"/>
+                    <constraint firstAttribute="trailing" secondItem="XlR-Y8-9t6" secondAttribute="trailing" constant="10" id="aj8-ON-sEC"/>
+                    <constraint firstItem="R32-fQ-bb9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="b6g-DV-dRC"/>
+                    <constraint firstAttribute="trailing" secondItem="R32-fQ-bb9" secondAttribute="trailing" id="dJT-o7-zSc"/>
+                    <constraint firstItem="R32-fQ-bb9" firstAttribute="top" secondItem="2Dy-b9-bCn" secondAttribute="bottom" id="gMv-Jv-rSh"/>
+                    <constraint firstItem="XlR-Y8-9t6" firstAttribute="top" secondItem="bR1-ju-gi1" secondAttribute="bottom" constant="10" id="i0j-4k-m1h"/>
+                    <constraint firstItem="2Dy-b9-bCn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="j4S-mr-UQF"/>
+                    <constraint firstAttribute="trailing" secondItem="2Dy-b9-bCn" secondAttribute="trailing" constant="10" id="pBe-n5-kUs"/>
+                    <constraint firstItem="2Dy-b9-bCn" firstAttribute="top" secondItem="XlR-Y8-9t6" secondAttribute="bottom" id="pqB-cR-OhX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lineView" destination="R32-fQ-bb9" id="9yI-zu-hMi"/>
+                <outlet property="secondImageV" destination="2Dy-b9-bCn" id="1Kl-a0-MT0"/>
+                <outlet property="secondImageVH" destination="Ptl-73-KZi" id="peM-Qb-ovp"/>
+                <outlet property="titleLabel" destination="bR1-ju-gi1" id="WGe-Nt-j5u"/>
+                <outlet property="titleLeft" destination="3hx-VM-euu" id="HGK-69-1tQ"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="162.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="XRPlaceholder" width="391" height="220"/>
+    </resources>
+</document>

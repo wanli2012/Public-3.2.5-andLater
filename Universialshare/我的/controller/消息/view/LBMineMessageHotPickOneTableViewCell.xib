@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LBMineMessageHotPickOneTableViewCell" id="KGk-i7-Jjw" customClass="LBMineMessageHotPickOneTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c06-0I-0lK">
+                        <rect key="frame" x="20" y="8" width="280" height="65"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XRPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="Xpf-da-jq0">
+                                <rect key="frame" x="170" y="3" width="100" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="GIg-CG-Ubr"/>
+                                    <constraint firstAttribute="height" constant="60" id="hV0-oD-BEg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哦是农产品是农村 v 女生你们的视" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YH-R3-2Cb">
+                                <rect key="frame" x="10" y="10" width="150" height="33.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Eqh-Tx-5nA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xpf-da-jq0" firstAttribute="leading" secondItem="0YH-R3-2Cb" secondAttribute="trailing" constant="10" id="2BD-cI-trW"/>
+                            <constraint firstItem="Xpf-da-jq0" firstAttribute="centerY" secondItem="c06-0I-0lK" secondAttribute="centerY" id="c3j-eb-KAQ"/>
+                            <constraint firstItem="0YH-R3-2Cb" firstAttribute="top" secondItem="c06-0I-0lK" secondAttribute="top" constant="10" id="cLN-bk-CGM"/>
+                            <constraint firstItem="0YH-R3-2Cb" firstAttribute="leading" secondItem="c06-0I-0lK" secondAttribute="leading" constant="10" id="lWu-VH-t6r"/>
+                            <constraint firstAttribute="trailing" secondItem="Xpf-da-jq0" secondAttribute="trailing" constant="10" id="mUd-Hf-WXS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="c06-0I-0lK" secondAttribute="trailing" constant="20" id="FNI-PB-AGJ"/>
+                    <constraint firstItem="c06-0I-0lK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="PeQ-rW-uFv"/>
+                    <constraint firstAttribute="bottom" secondItem="c06-0I-0lK" secondAttribute="bottom" constant="6" id="pPF-jw-5lT"/>
+                    <constraint firstItem="c06-0I-0lK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="qWg-6Q-t0g"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="XRPlaceholder" width="391" height="220"/>
+    </resources>
+</document>

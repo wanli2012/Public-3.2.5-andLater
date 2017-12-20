@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GLHomePageNoticeView">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="268"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公告" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hy-TK-b1h">
+                    <rect key="frame" x="10" y="10" width="297" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.1072334722" green="0.61346602439999998" blue="0.7763050199" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYZ-B0-IR9">
+                    <rect key="frame" x="0.0" y="40.5" width="317" height="227.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbG-O6-qag">
+                            <rect key="frame" x="0.0" y="0.0" width="317" height="233"/>
+                            <subviews>
+                                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wy0-cs-qe3">
+                                    <rect key="frame" x="5" y="0.0" width="307" height="228"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </webView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Wy0-cs-qe3" firstAttribute="top" secondItem="xbG-O6-qag" secondAttribute="top" id="4w4-jT-C8C"/>
+                                <constraint firstAttribute="trailing" secondItem="Wy0-cs-qe3" secondAttribute="trailing" constant="5" id="9wy-sq-Koo"/>
+                                <constraint firstAttribute="bottom" secondItem="Wy0-cs-qe3" secondAttribute="bottom" constant="5" id="GUo-ut-zou"/>
+                                <constraint firstAttribute="height" constant="233" id="Pjr-fM-3kx"/>
+                                <constraint firstAttribute="width" constant="317" id="Xsh-s2-VmK"/>
+                                <constraint firstItem="Wy0-cs-qe3" firstAttribute="leading" secondItem="xbG-O6-qag" secondAttribute="leading" constant="5" id="eRJ-F8-0g8"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xbG-O6-qag" firstAttribute="top" secondItem="FYZ-B0-IR9" secondAttribute="top" id="0Kl-VW-1Qt"/>
+                        <constraint firstItem="xbG-O6-qag" firstAttribute="leading" secondItem="FYZ-B0-IR9" secondAttribute="leading" id="4Ug-gx-yO6"/>
+                        <constraint firstAttribute="trailing" secondItem="xbG-O6-qag" secondAttribute="trailing" id="VGu-Ll-vJl"/>
+                        <constraint firstAttribute="bottom" secondItem="xbG-O6-qag" secondAttribute="bottom" id="vAn-VQ-omC"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTg-tL-q1F">
+                    <rect key="frame" x="272" y="2.5" width="35" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="JeJ-wY-zh0"/>
+                        <constraint firstAttribute="width" constant="35" id="Z19-VS-em7"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
+                    <state key="normal" image="广告取消"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="FYZ-B0-IR9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="09r-RG-o6X"/>
+                <constraint firstItem="FYZ-B0-IR9" firstAttribute="top" secondItem="2hy-TK-b1h" secondAttribute="bottom" constant="10" id="AKC-kI-HIl"/>
+                <constraint firstItem="bTg-tL-q1F" firstAttribute="centerY" secondItem="2hy-TK-b1h" secondAttribute="centerY" id="JBg-2K-xpW"/>
+                <constraint firstItem="2hy-TK-b1h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Niz-g3-vQg"/>
+                <constraint firstAttribute="trailing" secondItem="FYZ-B0-IR9" secondAttribute="trailing" id="bO9-xn-HAU"/>
+                <constraint firstAttribute="bottom" secondItem="FYZ-B0-IR9" secondAttribute="bottom" id="cod-6v-kNi"/>
+                <constraint firstItem="2hy-TK-b1h" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="j7k-Fu-xjf"/>
+                <constraint firstAttribute="trailing" secondItem="2hy-TK-b1h" secondAttribute="trailing" constant="10" id="u6j-IV-b0y"/>
+                <constraint firstAttribute="trailing" secondItem="bTg-tL-q1F" secondAttribute="trailing" constant="10" id="vZO-RK-3Je"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBt" destination="bTg-tL-q1F" id="bSE-9h-q2z"/>
+                <outlet property="contentView" destination="xbG-O6-qag" id="YLr-Ia-pwG"/>
+                <outlet property="contentViewH" destination="Pjr-fM-3kx" id="7it-H0-Njd"/>
+                <outlet property="contentViewW" destination="Xsh-s2-VmK" id="nro-PW-suL"/>
+                <outlet property="scrollView" destination="FYZ-B0-IR9" id="AsM-gu-nPn"/>
+                <outlet property="titleLabel" destination="2hy-TK-b1h" id="2TB-jv-pH1"/>
+                <outlet property="webView" destination="Wy0-cs-qe3" id="yxw-Cb-rxe"/>
+            </connections>
+            <point key="canvasLocation" x="5.5" y="-145"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="广告取消" width="25" height="25"/>
+    </resources>
+</document>

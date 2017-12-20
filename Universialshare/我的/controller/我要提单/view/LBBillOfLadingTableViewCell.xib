@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LBBillOfLadingTableViewCell" rowHeight="134" id="25v-tb-VW8" customClass="LBBillOfLadingTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="25v-tb-VW8" id="AuF-J5-LcS">
+                <rect key="frame" x="0.0" y="0.0" width="317" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xyb-fc-CHi">
+                        <rect key="frame" x="0.0" y="0.0" width="317" height="98"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xyb-fc-CHi" firstAttribute="top" secondItem="AuF-J5-LcS" secondAttribute="top" id="Keh-rG-2p2"/>
+                    <constraint firstAttribute="trailing" secondItem="xyb-fc-CHi" secondAttribute="trailing" id="QnK-3n-eor"/>
+                    <constraint firstAttribute="bottom" secondItem="xyb-fc-CHi" secondAttribute="bottom" constant="1" id="fiG-Zj-Sbx"/>
+                    <constraint firstItem="xyb-fc-CHi" firstAttribute="leading" secondItem="AuF-J5-LcS" secondAttribute="leading" id="rTS-A8-jss"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <point key="canvasLocation" x="169.5" y="-133"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,87 @@
+//
+//  universialshare.pch
+//  Universialshare
+//
+//  Created by 四川三君科技有限公司 on 2017/3/23.
+//  Copyright © 2017年 四川三君科技有限公司. All rights reserved.
+//
+
+#ifndef universialshare_pch
+#define universialshare_pch
+
+#ifdef __OBJC__
+
+#import "Header.h"
+#import "UIView+YYExtension.h"
+#import "NetworkManager.h"
+#import "MBProgressHUD+LB.h"
+#import "UserModel.h"
+#import "usermodelachivar.h"
+#import <MJRefresh/MJRefresh.h>
+#import "MJExtension.h"
+#import "predicateModel.h"
+#import "LoadWaitView.h"
+#import "NodataView.h"
+#import "RSAEncryptor.h"
+#import "GLNearby_Model.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+
+#import "UIView+Extension.h"
+#import "NIMKit.h"
+#import <NIMSDK/NIMSDK.h>
+#import <NIMAVChat/NIMAVChat.h>
+#import "NTESGlobalMacro.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import <CocoaLumberjack/DDLogMacros.h>
+#import "ijksdl.h"
+#import "UIView+Toast.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
+
+#ifdef DEBUG
+static DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static DDLogLevel ddLogLevel = DDLogLevelInfo;
+
+#endif
+
+
+
+#define FONT(s)       [UIFont systemFontOfSize:s]
+#define BackgroundColor [UIColor colorWithRed:240/255.0f green:240/255.0f blue:244/255.0f alpha:1]
+//#define MainColor        [UIColor colorWithRed:24/255.0f green:161/255.0f blue:76/255.0f alpha:1]
+#define MainColor TABBARTITLE_COLOR
+
+#pragma mark - UIColor宏定义
+#define UIColorFromRGBA(rgbValue, alphaValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0x0000FF))/255.0 \
+alpha:alphaValue]
+
+#define UIColorFromRGB(rgbValue) UIColorFromRGBA(rgbValue, 1.0)
+#define NTES_USE_CLEAR_BAR - (BOOL)useClearBar{return YES;}
+#define NTES_FORBID_INTERACTIVE_POP - (BOOL)forbidInteractivePop{return YES;}
+#define UIScreenWidth                              [UIScreen mainScreen].bounds.size.width
+#define UIScreenHeight                             [UIScreen mainScreen].bounds.size.height
+#define UISreenWidthScale   UIScreenWidth / 320
+
+//适配iphonex导航栏
+#define SafeAreaTopHeight (UIScreenHeight == 812.0 ? 88 : 64)
+/// 底部宏，吃一见长一智吧，别写数字了
+#define SafeAreaBottomHeight (UIScreenHeight == 812.0 ? 34 : 0)
+
+#define  adjustsScrollViewInsets_NO(scrollView,vc)\
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+if ([UIScrollView instancesRespondToSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:")]) {\
+[scrollView   performSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:") withObject:@(2)];\
+} else {\
+vc.automaticallyAdjustsScrollViewInsets = NO;\
+}\
+_Pragma("clang diagnostic pop") \
+} while (0)
+
+#endif
+#endif /* universialshare_pch */

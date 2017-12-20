@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LBmineCenterGameChargeRecoderViewController">
+            <connections>
+                <outlet property="tableview" destination="9o5-hk-gcd" id="sfB-gV-PpM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9o5-hk-gcd">
+                    <rect key="frame" x="0.0" y="64" width="320" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="Hnq-ff-0eu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEo-zC-Xoh">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="充值方式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULM-5m-tZ5">
+                                <rect key="frame" x="80" y="0.0" width="80" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="充值金额" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWf-bQ-FO7">
+                                <rect key="frame" x="160" y="0.0" width="80" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="充值金币" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykI-Hc-UYe">
+                                <rect key="frame" x="240" y="0.0" width="80" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ULM-5m-tZ5" firstAttribute="width" secondItem="nEo-zC-Xoh" secondAttribute="width" id="154-2f-WbQ"/>
+                            <constraint firstAttribute="bottom" secondItem="gWf-bQ-FO7" secondAttribute="bottom" id="2B7-nd-kla"/>
+                            <constraint firstAttribute="bottom" secondItem="ULM-5m-tZ5" secondAttribute="bottom" id="3LU-Dq-5Zk"/>
+                            <constraint firstAttribute="trailing" secondItem="ykI-Hc-UYe" secondAttribute="trailing" id="BuK-Kv-RLm"/>
+                            <constraint firstItem="gWf-bQ-FO7" firstAttribute="leading" secondItem="ULM-5m-tZ5" secondAttribute="trailing" id="Ods-xi-wMr"/>
+                            <constraint firstItem="gWf-bQ-FO7" firstAttribute="top" secondItem="Hnq-ff-0eu" secondAttribute="top" id="Tz1-vg-cmj"/>
+                            <constraint firstItem="nEo-zC-Xoh" firstAttribute="top" secondItem="Hnq-ff-0eu" secondAttribute="top" id="Wfd-lb-E5V"/>
+                            <constraint firstAttribute="bottom" secondItem="ykI-Hc-UYe" secondAttribute="bottom" id="XOc-vu-X06"/>
+                            <constraint firstItem="ULM-5m-tZ5" firstAttribute="top" secondItem="Hnq-ff-0eu" secondAttribute="top" id="ZUZ-o6-4CH"/>
+                            <constraint firstItem="nEo-zC-Xoh" firstAttribute="width" secondItem="Hnq-ff-0eu" secondAttribute="width" multiplier="1/4" id="cnJ-8S-Zf8"/>
+                            <constraint firstItem="ykI-Hc-UYe" firstAttribute="top" secondItem="Hnq-ff-0eu" secondAttribute="top" id="d7d-B0-32e"/>
+                            <constraint firstAttribute="bottom" secondItem="nEo-zC-Xoh" secondAttribute="bottom" id="est-3F-MLb"/>
+                            <constraint firstItem="ULM-5m-tZ5" firstAttribute="leading" secondItem="nEo-zC-Xoh" secondAttribute="trailing" id="jGp-g8-FaT"/>
+                            <constraint firstItem="ykI-Hc-UYe" firstAttribute="leading" secondItem="gWf-bQ-FO7" secondAttribute="trailing" id="lkU-ty-Ixp"/>
+                            <constraint firstItem="gWf-bQ-FO7" firstAttribute="width" secondItem="nEo-zC-Xoh" secondAttribute="width" id="tb2-E5-aI5"/>
+                            <constraint firstItem="nEo-zC-Xoh" firstAttribute="leading" secondItem="Hnq-ff-0eu" secondAttribute="leading" id="vWQ-su-Qsf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ftp-Zt-6rg"/>
+                        <outlet property="delegate" destination="-1" id="xpp-e6-u6r"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9o5-hk-gcd" secondAttribute="trailing" id="6YV-P8-Svh"/>
+                <constraint firstItem="9o5-hk-gcd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="czS-ag-Mq6"/>
+                <constraint firstItem="9o5-hk-gcd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="i9b-7u-Bic"/>
+                <constraint firstAttribute="bottom" secondItem="9o5-hk-gcd" secondAttribute="bottom" id="rRE-75-apP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

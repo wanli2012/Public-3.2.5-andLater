@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LBMineCenterOrderDetailViewController">
+            <connections>
+                <outlet property="cancelBt" destination="gXU-QF-Q1d" id="CE1-2s-XKl"/>
+                <outlet property="tableview" destination="rpK-8a-BXk" id="oz8-kH-bi3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yer-sF-pYD">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXU-QF-Q1d">
+                            <rect key="frame" x="285" y="10" width="80" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="K96-mS-AMu"/>
+                                <constraint firstAttribute="width" constant="80" id="uJM-of-o04"/>
+                            </constraints>
+                            <state key="normal" title="取消订单">
+                                <color key="titleColor" red="0.77709561589999998" green="0.19865089650000001" blue="0.056773729619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelorder:" destination="-1" eventType="touchUpInside" id="fEx-yV-fWn"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="gXU-QF-Q1d" secondAttribute="trailing" constant="10" id="PGd-aI-M5e"/>
+                        <constraint firstItem="gXU-QF-Q1d" firstAttribute="centerY" secondItem="yer-sF-pYD" secondAttribute="centerY" id="yw7-iv-Yz9"/>
+                        <constraint firstAttribute="height" constant="60" id="zbs-ym-vng"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rpK-8a-BXk">
+                    <rect key="frame" x="0.0" y="64" width="375" height="543"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lcv-Jf-C8a"/>
+                        <outlet property="delegate" destination="-1" id="NZv-zd-YXV"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yer-sF-pYD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="L4l-Ul-eFy"/>
+                <constraint firstAttribute="trailing" secondItem="rpK-8a-BXk" secondAttribute="trailing" id="O1e-Id-tYN"/>
+                <constraint firstAttribute="trailing" secondItem="yer-sF-pYD" secondAttribute="trailing" id="OsM-sE-8AU"/>
+                <constraint firstItem="rpK-8a-BXk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TVf-1b-Po1"/>
+                <constraint firstAttribute="bottom" secondItem="yer-sF-pYD" secondAttribute="bottom" id="avo-aW-Ika"/>
+                <constraint firstItem="yer-sF-pYD" firstAttribute="top" secondItem="rpK-8a-BXk" secondAttribute="bottom" id="jlL-w0-dJC"/>
+                <constraint firstItem="rpK-8a-BXk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="zWT-OG-hfI"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

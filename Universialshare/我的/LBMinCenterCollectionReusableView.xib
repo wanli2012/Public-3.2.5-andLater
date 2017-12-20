@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="LBMinCenterCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jm7-S6-bfY">
+                    <rect key="frame" x="0.0" y="1" width="320" height="49"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nS6-K4-VKh">
+                            <rect key="frame" x="10" y="18" width="3" height="13"/>
+                            <color key="backgroundColor" red="1" green="0.60784313729999995" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="3" id="74X-Ye-uQA"/>
+                                <constraint firstAttribute="height" constant="13" id="ddm-fq-Up4"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的钱包" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsb-LJ-LNM">
+                            <rect key="frame" x="18" y="16.5" width="54" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="Bdd-CY-tBB"/>
+                                <constraint firstAttribute="height" constant="15" id="a2I-eQ-sLC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="nS6-K4-VKh" firstAttribute="leading" secondItem="Jm7-S6-bfY" secondAttribute="leading" constant="10" id="1b4-A9-XvU"/>
+                        <constraint firstItem="nS6-K4-VKh" firstAttribute="centerY" secondItem="Jm7-S6-bfY" secondAttribute="centerY" id="Jx2-2x-FYH"/>
+                        <constraint firstItem="wsb-LJ-LNM" firstAttribute="centerY" secondItem="Jm7-S6-bfY" secondAttribute="centerY" id="RrZ-EW-5W4"/>
+                        <constraint firstItem="wsb-LJ-LNM" firstAttribute="leading" secondItem="nS6-K4-VKh" secondAttribute="trailing" constant="5" id="mcm-Xw-F2l"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Jm7-S6-bfY" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="1" id="Dld-Ox-4a2"/>
+                <constraint firstAttribute="trailing" secondItem="Jm7-S6-bfY" secondAttribute="trailing" id="Nsv-6H-cKq"/>
+                <constraint firstAttribute="bottom" secondItem="Jm7-S6-bfY" secondAttribute="bottom" id="fxC-I7-oQB"/>
+                <constraint firstItem="Jm7-S6-bfY" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="tBP-IS-1oN"/>
+            </constraints>
+            <connections>
+                <outlet property="titileLb" destination="wsb-LJ-LNM" id="LMI-Ru-DeV"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>

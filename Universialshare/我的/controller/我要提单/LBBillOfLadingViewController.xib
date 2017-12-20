@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LBBillOfLadingViewController">
+            <connections>
+                <outlet property="submitBt" destination="ign-AV-Eeg" id="XEr-Wh-T5w"/>
+                <outlet property="tableview" destination="Cpj-cd-flt" id="2Gb-hd-O5v"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ExW-E0-s83">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vsg-y5-udS">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="suj-55-dDx"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ign-AV-Eeg">
+                            <rect key="frame" x="0.0" y="1" width="375" height="49"/>
+                            <color key="backgroundColor" red="1" green="0.60784313729999995" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="提交">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="submitEvent:" destination="-1" eventType="touchUpInside" id="bFu-f1-EF5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="vsg-y5-udS" firstAttribute="leading" secondItem="ExW-E0-s83" secondAttribute="leading" id="Cuy-TL-MAs"/>
+                        <constraint firstAttribute="trailing" secondItem="vsg-y5-udS" secondAttribute="trailing" id="GDt-8i-0Mw"/>
+                        <constraint firstItem="ign-AV-Eeg" firstAttribute="leading" secondItem="ExW-E0-s83" secondAttribute="leading" id="LtA-cM-DpD"/>
+                        <constraint firstAttribute="bottom" secondItem="ign-AV-Eeg" secondAttribute="bottom" id="Vva-DP-T2l"/>
+                        <constraint firstItem="vsg-y5-udS" firstAttribute="top" secondItem="ExW-E0-s83" secondAttribute="top" id="Wwv-cJ-uH3"/>
+                        <constraint firstItem="ign-AV-Eeg" firstAttribute="top" secondItem="vsg-y5-udS" secondAttribute="bottom" id="d7s-Ui-m3A"/>
+                        <constraint firstAttribute="height" constant="50" id="m8h-V5-Sed"/>
+                        <constraint firstAttribute="trailing" secondItem="ign-AV-Eeg" secondAttribute="trailing" id="x7m-bt-IdT"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cpj-cd-flt">
+                    <rect key="frame" x="0.0" y="64" width="375" height="553"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rZG-4v-LKW"/>
+                        <outlet property="delegate" destination="-1" id="PPM-eA-EiZ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ExW-E0-s83" secondAttribute="bottom" id="5i9-wL-mr4"/>
+                <constraint firstAttribute="trailing" secondItem="Cpj-cd-flt" secondAttribute="trailing" id="AFn-BQ-xNY"/>
+                <constraint firstItem="Cpj-cd-flt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="HgX-hg-5Fi"/>
+                <constraint firstItem="Cpj-cd-flt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UUt-wo-dpK"/>
+                <constraint firstItem="ExW-E0-s83" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b6y-zY-H5n"/>
+                <constraint firstAttribute="trailing" secondItem="ExW-E0-s83" secondAttribute="trailing" id="jLA-Ck-cRB"/>
+                <constraint firstItem="ExW-E0-s83" firstAttribute="top" secondItem="Cpj-cd-flt" secondAttribute="bottom" id="suJ-RS-9xQ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
